@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Paresh Kanani</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Paresh Kanani</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Paresh Kanani profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Paresh Kanani</h1>
+        <p class="section__text__p2">Mobile Application Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Pareshkumar_Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/paresh-kanani-bb95409a/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/paresh1994'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>7+ years <br />Mobile Application Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Web Development Cerificate <br />MCA Masters Degree<br />BCA Bachelors Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Experienced iOS Developer with 7+ years in designing and deploying mobile applications using Swift, SwiftUI, Objective-C, and Flutter. Strong knowledge of MVC, MVVM, Combine, RESTful APIs, Firebase, and cross-platform development. Currently studying Web Development, expanding expertise in ASP.NET, C#, CAML Query, PHP, JavaScript, XML, and MEAN Stack. Passionate about building scalable, user-centric applications with modern technologies. Actively seeking opportunities in web development and mobile application development.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="document.getElementById('experience').scrollIntoView({ behavior: 'smooth' });"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Mobile Application Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>iOS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flutter</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Android</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Swift</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Dart</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SwiftUI</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kotlin</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java Script</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Asp.Net</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Php</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySql</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="project-containers">
+          <div class="project-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/totalcare_app.png"
+                alt="TotalCare App"
+                class="project-img"
+              />
+            </div>
+            <h2 class="project-sub-title project-title">TotalCare App</h2>
+            <div class="text-container">
+              <p>
+                TotalCare app offers a user-friendly interface for patients to book appointments, access medical records, and communicate with healthcare providers. Clinicians can manage their schedules, conduct virtual consultations, and provide personalized care to patients from the comfort of their homes.
+              </p>
+              <br />
+              <p>
+                iOS, Swift, Twilio, VoIP Call, Stripe, BLE, Socket.IO, Firebase, Analytics, MVC, Health Kit, RESTful APIs
+              </p>
+            </div>
+            <div class="btn-container">
+              <a href="https://apps.apple.com/ca/app/patient-totalcare/id1444389239?platform=iphone" target="_blank">
+                <img src="./assets/app-store.png" alt="Download on the App Store" style="width:30px; height:auto;">
+              </a>
+              <a href="https://apps.apple.com/ca/app/clinician-totalcare/id1444315169?platform=iphone" target="_blank">
+                <img src="./assets/app-store.png" alt="Download on the App Store" style="width:30px; height:auto;">
+              </a>
+            </div>
+          </div>
+          <div class="project-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ios_sdk.png"
+                alt="Mindset App"
+                class="project-img"
+              />
+            </div>
+            <h2 class="project-sub-title project-title">Document Identity Scan iOS SDK</h2>
+            <div class="text-container">
+              <p>
+                An iOS SDK for scanning and recognizing identity documents such as passports and driver’s licenses. It leverages advanced image processing and machine learning to ensure accurate document verification, supports facial matching, liveness detection, and provides confidence scores for identity validation.
+              </p>
+              <br />
+              <p>
+                iOS, SwiftUI, Swift, OpenCV, Regula, OIDC, Combine, CoreML, Vision, AVFoundation, RESTful APIs
+              </p>
+            </div>
+            <div class="btn-container">
+              <a href="https://www.youverse.id/resources/blog/smartphone-face-authentication" target="_blank">
+                <img src="./assets/app-store.png" alt="Download on the App Store" style="width:30px; height:auto;">
+              </a>
+            </div>
+          </div>
+          <div class="project-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/mindset_app.png"
+                alt="Mindset App"
+                class="project-img"
+              />
+            </div>
+            <h2 class="project-sub-title project-title">Mindset App</h2>
+            <div class="text-container">
+              <p>          
+                Mindset is a motivational app designed to inspire and empower users through a curated collection of motivational audios, quotes, and videos. With a focus on personal growth and self-improvement, the app offers a wide range of content that caters to various aspects of life, including productivity, mindset, and motivation.
+              </p>
+              <br />
+              <p>
+                iOS, Swift, Android, Kotlin, Firebase, Analytics, IAP, MVVM, RESTful APIs
+              </p>
+            </div>
+            <div class="btn-container">
+              <a href="https://apps.apple.com/us/app/mindset-daily-self-motivation/id1487761500?platform=iphone" target="_blank">
+                <img src="./assets/app-store.png" alt="Download on the App Store" style="width:30px; height:auto;">
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.mindset.app&hl=en_CA" target="_blank">
+                <img src="./assets/playstore.png" alt="Download on the Play Store" style="width:30px; height:auto;">
+              </a>
+            </div>
+          </div>
+          <div class="project-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/nutritionist_app.jpg"
+                alt="Nutritionist App"
+                class="project-img"
+              />
+            </div>
+            <h2 class="project-sub-title project-title">Nutritionist App</h2>
+            <div class="text-container">
+              <p>
+                Nutritionist is a comprehensive app offering personalized diet plans and nutrition tracking to help users achieve their health and wellness goals.
+              </p>
+              <br />
+              <p>
+                iOS, Swift, Realm, IAP, Firebase, Analytics, MVC, RESTful APIs
+              </p>
+            </div>
+            <div class="btn-container">
+              <a href="https://apps.apple.com/us/app/nutritionist/id918101023" target="_blank">
+                <img src="./assets/app-store.png" alt="Download on the App Store" style="width:30px; height:auto;">
+              </a>
+            </div>
+          </div>
+          <div class="project-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/gymfan_app.png"
+                alt="GymFan App"
+                class="project-img"
+              />
+            </div>
+            <h2 class="project-sub-title project-title">GymFan App</h2>
+            <div class="text-container">
+              <p>
+                GymFan is a social fitness platform where users can share workout routines, nutrition tips, and lifestyle advice, fostering a community of fitness enthusiasts.
+              </p>
+              <br />
+              <p>
+                Flutter, Dart, iOS, Android, Stripe, Socket.IO, AWS Amplify, Agora, Firebase, Analytics, Health Kit, RESTful APIs
+              </p>
+            </div>
+            <div class="btn-container">
+              <a href="https://apps.apple.com/us/app/gymfans/id1632168343" target="_blank">
+                <img src="./assets/app-store.png" alt="Download on the App Store" style="width:30px; height:auto;">
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.gymfans&hl=en_CA" target="_blank">
+                <img src="./assets/playstore.png" alt="Download on the Play Store" style="width:30px; height:auto;">
+              </a>
+            </div>
+          </div>
+          <div class="project-details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/psm100_app.png"
+                alt="psm100_app"
+                class="project-img"
+              />
+            </div>
+            <h2 class="project-sub-title project-title">PSM100 App</h2>
+            <div class="text-container">
+              <p>
+                The PSM100 app serves as a personalized guide to the Pramukh Swami Maharaj Centenary Celebrations, enhancing the experience for attendees with event information and updates.
+              </p>
+              <br />
+              <p>
+                Flutter, Dart, iOS, Android , Agora, Firebase, Analytics, RESTful APIs
+              </p>
+            </div>
+            <div class="btn-container">
+              <a href="https://apps.apple.com/ca/app/psm100-nagar/id6444606458" target="_blank">
+                <img src="./assets/app-store.png" alt="Download on the App Store" style="width:30px; height:auto;">
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=org.baps.psm100&hl=en_CA" target="_blank">
+                <img src="./assets/playstore.png" alt="Download on the Play Store" style="width:30px; height:auto;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:kanani.paresh1994@gmail.com">kanani.paresh1994@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/paresh-kanani-bb95409a/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/stackoverflow.png"
+            alt="Stack Overflow icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://stackoverflow.com/users/5917068/iparesh">Stack Overflow</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Paresh Kanani. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
