@@ -286,7 +286,7 @@ section {
 
 .project-details-container {
   padding: 1rem;
-  height: 500px; /* Fixed height for each project card */
+  height: auto; /* Fixed height for each project card */
   overflow: hidden; /* Prevents content overflow */
   display: flex;
   flex-direction: column;
